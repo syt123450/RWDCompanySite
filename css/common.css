@@ -1,14 +1,19 @@
+
+
 body > div > header {
     height: 100px;
+     
 }
 
 body > div > header > img {
     height: 100px;
+    width: 100px;
     float: left;
 }
 
 body > div > header > div {
     margin-top: 30px;
+    
 }
 
 header.page-header {
