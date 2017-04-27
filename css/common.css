@@ -2,7 +2,7 @@
 
 body > div > header {
     height: 100px;
-     
+
 }
 
 body > div > header > img {
@@ -13,7 +13,7 @@ body > div > header > img {
 
 body > div > header > div {
     margin-top: 30px;
-    
+
 }
 
 header.page-header {
@@ -23,4 +23,13 @@ header.page-header {
 body > div > footer {
     text-align: center;
     font-size: 11px;
+}
+main > .carousel-inner{
+  width:100%;
+  max-height: 200px !important;
+}
+iframe {
+    width: 100vw;
+    height: 31vw; /* 100/56.25 = 560/315 = 1.778 */
+    background:red;
 }
