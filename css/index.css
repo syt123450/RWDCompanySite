@@ -1,0 +1,18 @@
+.carousel {
+	max-height: 500px;
+	padding-left:3%;
+}
+
+
+.unselected img{
+	opacity:0.5;
+}
+span{
+	
+}
+#thumbails img{
+	width:100%
+}
+#thumbails{
+	padding-top: 1%
+}

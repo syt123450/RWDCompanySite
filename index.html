@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
     <script src="js/common.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
 
@@ -60,7 +62,57 @@
     </header>
 
     <main>
+		<div class="container">
+			<div class="row">
+				<div id="carousel" class="carousel slide col-lg-offset-1 col-lg-10 col-md-12 col-sm-12">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel" data-slide-to="1"></li>
+						<li data-target="#carousel" data-slide-to="2"></li>
+					</ol>
 
+					<div class="carousel-inner">
+						<div class="item active" >
+							<a href="html/mobile.html">
+							<img src="img/mobile_thumbail.png" class="img-responsive carousel" alt="Mobile"><div class="carousel-caption"><h2>Mobile</h2></div></a>
+						</div>
+						<div class="item" >
+							<a href="html/bigData.html">
+								<img src="img/big_data_thumbail.jpg" class="img-responsive carousel"  alt="Big Data"><div class="carousel-caption"><h2>Big Data</h2></div></a>
+						</div>
+						<div class="item">
+							<a href="html/IoT.html">
+								<img src="img/IOT_thumbail.jpg" class="img-responsive carousel" alt="IoT"><div class="carousel-caption"><h2>Big Data</h2></div></a>
+						</div>
+					</div>
+
+					<a class="left carousel-control" href="#carousel" data-slide="prev">
+						<<--
+						
+					</a>
+					<a class="right carousel-control" href="#carousel" data-slide="next">
+						-->>
+					</a>
+				</div>
+			</div>
+			<div class="hidden-sm hidden-xs" id="slider-thumber">
+			<ul id="thumbails" class="list-inline row">
+				<li class="col-ls-4 col-md-4"><div class="thumbail" id="carousel-selector-0">
+					<img src="img/mobile_thumbail.png" class="img-responsive" alt="Mobile">
+					
+				</div></li>
+				
+				<li class="col-ls-4 col-md-4 "><div class="thumbail unselected" id="carousel-selector-1">
+					<img src="img/big_data_thumbail.jpg" class="img-responsive" alt="Big Data">
+				</div></li>
+				
+				<li class="col-ls-4 col-md-4 "><div class="thumbail unselected" id="carousel-selector-2">
+					<img src="img/IOT_thumbail.jpg" class="img-responsive" alt="IoT">
+				</div></li>
+			</ul>
+			</div>
+		</div>
+		
     </main>
 
     <footer>
