@@ -3,3 +3,8 @@
 	font-size: 0.8em;
 	padding-top: 5%;
 }
+
+#content{
+	overflow: auto;
+	height:60vh;
+}

@@ -2,7 +2,7 @@
 $(document).ready(function($){
 
 	  $('#carousel').carousel({
-			interval: 1000
+			interval: 5000
 		});
  
 	$('[id^=carousel-selector-]').click( function(){
