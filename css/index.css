@@ -1,6 +1,6 @@
 .carousel {
-	max-height: 500px;
-	padding-left:3%;
+	max-height: 31vw;
+	
 }
 
 
@@ -15,4 +15,7 @@ span{
 }
 #thumbails{
 	padding-top: 1%
+}
+.item img{
+	width:100%
 }
