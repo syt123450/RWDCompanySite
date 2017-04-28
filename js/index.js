@@ -1,5 +1,6 @@
 
 $(document).ready(function($){
+
 	  $('#carousel').carousel({
 			interval: 1000
 		});
@@ -25,4 +26,10 @@ $(document).ready(function($){
 		$('[id^=carousel-selector-]').addClass('unselected');
 	  $('[id=carousel-selector-'+id+']').removeClass('unselected');
 	});
+
+    // connect();
+    //
+    // $(window).unload(function(){
+    //     disconnect();
+    // });
 });
