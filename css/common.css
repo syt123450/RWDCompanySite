@@ -1,3 +1,7 @@
+body {
+    width: 100%;
+}
+
 body > div > header {
     height: 100px;
 
@@ -18,10 +22,11 @@ header.page-header {
     margin-top: 0;
 }
 
-body > div > footer {
-    width: 100%;
+body > div> footer {
     position: fixed;
+    left: 0;
     bottom: 0;
+    width: 100%;
     font-size: 11px;
 }
 
