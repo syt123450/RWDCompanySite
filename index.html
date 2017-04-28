@@ -1,131 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Landing</title>
-    <script src="https://cdn.bootcss.com/sockjs-client/1.1.2/sockjs.js"></script>
-    <script src="js/stomp.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/common.css">
+	<meta charset="UTF-8">
+	<title>Landing</title>
+	<script src="https://cdn.bootcss.com/sockjs-client/1.1.2/sockjs.js"></script>
+	<script src="js/stomp.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/index.css">
-    <script src="js/common.js"></script>
+	<script src="js/common.js"></script>
 	<script src="js/index.js"></script>
 </head>
+
 <body>
 
-<div class="container">
-    <header class="page-header">
-        <img src="img/demo.png">
-        <div class="col-xs-8 col-sm-8 col-xs-offset-2 col-sm-offset-2">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#example-navbar-collapse">
+	<div class="container">
+		<header class="page-header">
+			<img src="img/demo.png">
+			<div class="col-xs-8 col-sm-8 col-xs-offset-2 col-sm-offset-2">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
                             <span class="sr-only">Switcher</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand active">Home</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<a class="navbar-brand active">Home</a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     Product <b class="caret"></b>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="html/mobile.html">Mobile</a></li>
-                                    <li><a href="html/bigData.html">Big Data</a></li>
-                                    <li><a href="html/IoT.html">IoE/IoT</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<ul class="dropdown-menu">
+										<li><a href="html/mobile.html">Mobile</a></li>
+										<li><a href="html/bigData.html">Big Data</a></li>
+										<li><a href="html/IoT.html">IoE/IoT</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     About Us <b class="caret"></b>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="html/management.html">Management</a></li>
-                                    <li><a href="html/conduct.html">Code of Conduct</a></li>
-                                    <li><a href="html/download.html">Business Process</a></li>
-                                    <li><a href="html/location.html">Locations</a></li>
-                                    <li><a href="html/contact.html">Contacts</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="html/blog.html">BLOG</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-
-		<div class="container">
-			<div class="row">
-				<div id="carousel" class="carousel slide col-lg-offset-1 col-lg-10 col-md-12 col-sm-12">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel" data-slide-to="1"></li>
-						<li data-target="#carousel" data-slide-to="2"></li>
-						<li data-target="#carousel" data-slide-to="3"></li>
-					</ol>
-
-					<div class="carousel-inner">
-						<div class="item active" >
-							<a href="html/mobile.html">
-							<img src="img/mobile_thumbail.png" class="img-responsive carousel" alt="Mobile"><div class="carousel-caption"><h2>Mobile</h2></div></a>
-						</div>
-						<div class="item" >
-							<a href="html/bigData.html">
-								<img src="img/big_data_thumbail.jpg" class="img-responsive carousel"  alt="Big Data"><div class="carousel-caption"><h2>Big Data</h2></div></a>
-						</div>
-						<div class="item">
-							<a href="html/IoT.html">
-								<img src="img/IOT_thumbail.jpg" class="img-responsive carousel" alt="IoT"><div class="carousel-caption"><h2>Big Data</h2></div></a>
-						</div>
-						<div class="item">
-							 <iframe src="https://www.youtube.com/embed/-Gj93L2Qa6c" frameborder="0" allowfullscreen class="img-responsive carousel"></iframe>
+									<ul class="dropdown-menu">
+										<li><a href="html/management.html">Management</a></li>
+										<li><a href="html/conduct.html">Code of Conduct</a></li>
+										<li><a href="html/download.html">Business Process</a></li>
+										<li><a href="html/location.html">Locations</a></li>
+										<li><a href="html/contact.html">Contacts</a></li>
+									</ul>
+								</li>
+								<li><a href="html/blog.html">BLOG</a></li>
+							</ul>
 						</div>
 					</div>
+				</nav>
+			</div>
+		</header>
 
-					<a class="left carousel-control" href="#carousel" data-slide="prev">
-						
-						
-					</a>
-					<a class="right carousel-control" href="#carousel" data-slide="next">
-					 
-					</a>
+		<main>
+
+			<div class="container">
+				<div class="row">
+					<div id="carousel" class="carousel slide col-lg-offset-1 col-lg-10 col-md-12 col-sm-12">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+							<li data-target="#carousel" data-slide-to="2"></li>
+							<li data-target="#carousel" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="item active">
+								<a href="html/mobile.html">
+									<img src="img/mobile_thumbail.png" class="img-responsive carousel" alt="Mobile">
+									<div class="carousel-caption">
+										<h2>Mobile</h2>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="html/bigData.html">
+									<img src="img/big_data_thumbail.jpg" class="img-responsive carousel" alt="Big Data">
+									<div class="carousel-caption">
+										<h2>Big Data</h2>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<a href="html/IoT.html">
+									<img src="img/IOT_thumbail.jpg" class="img-responsive carousel" alt="IoT">
+									<div class="carousel-caption">
+										<h2>Big Data</h2>
+									</div>
+								</a>
+							</div>
+							<div class="item">
+								<iframe src="https://www.youtube.com/embed/-Gj93L2Qa6c" frameborder="0" allowfullscreen class="img-responsive carousel"></iframe>
+							</div>
+						</div>
+
+						<a class="left carousel-control" href="#carousel" data-slide="prev">
+
+
+						</a>
+						<a class="right carousel-control" href="#carousel" data-slide="next">
+
+						</a>
+					</div>
+				</div>
+				<div class="hidden-sm hidden-xs container col-lg-offset-1 col-lg-10 col-md-12  " id="slider-thumber">
+					<ul id="thumbnails" class="list-inline">
+						<li class="col-ls-4 col-md-4">
+							<div class="thumbnail" id="carousel-selector-0">
+								<img src="img/mobile_thumbail.png" class="img-responsive" alt="Mobile">
+
+							</div>
+						</li>
+
+						<li class="col-ls-4 col-md-4 ">
+							<div class="thumbnail unselected" id="carousel-selector-1">
+								<img src="img/big_data_thumbail.jpg" class="img-responsive" alt="Big Data">
+							</div>
+						</li>
+
+						<li class="col-ls-4 col-md-4 ">
+							<div class="thumbnail unselected" id="carousel-selector-2">
+								<img src="img/IOT_thumbail.jpg" class="img-responsive" alt="IoT">
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="hidden-sm hidden-xs container col-lg-offset-1 col-lg-10 col-md-12  " id="slider-thumber">
-			<ul id="thumbnails" class="list-inline">
-				<li class="col-ls-4 col-md-4"><div class="thumbnail" id="carousel-selector-0">
-					<img src="img/mobile_thumbail.png" class="img-responsive" alt="Mobile">
-					
-				</div></li>
-				
-				<li class="col-ls-4 col-md-4 "><div class="thumbnail unselected" id="carousel-selector-1">
-					<img src="img/big_data_thumbail.jpg" class="img-responsive" alt="Big Data">
-				</div></li>
-				
-				<li class="col-ls-4 col-md-4 "><div class="thumbnail unselected" id="carousel-selector-2">
-					<img src="img/IOT_thumbail.jpg" class="img-responsive" alt="IoT">
-				</div></li>
-			</ul>
-			</div>
-		</div>
-		
-    </main>
 
-    <footer>
-        <p>twitter 新闻在这里</p>
-        <p>copyright © 2017 CMPE280 shock wave All rights reserved</p>
-    </footer>
-</div>
+		</main>
+
+		<footer>
+			<p>twitter 新闻在这里</p>
+			<p>copyright © 2017 CMPE280 shock wave All rights reserved</p>
+		</footer>
+	</div>
 </body>
+
 </html>
