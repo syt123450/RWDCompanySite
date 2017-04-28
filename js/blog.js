@@ -2,6 +2,9 @@
  * Created by ss on 2017/4/22.
  */
 $(document).ready(function($){
+
+
+
 	$(".panel-body").on("click",function(e){
 		var link= $(this).data("link");
 		console.log(link);
@@ -12,5 +15,11 @@ $(document).ready(function($){
 			$("#blog_content").html("<div><p>"+data.author+" posted on "+data.timestamp+"</p></div>");
 			$("#blog_content").html("<div><p>"+data.content+"</p></div>");
 		})
-	})
+	});
+
+    // connect();
+    //
+    // $(window).unload(function(){
+    //     disconnect();
+    // });
 });
