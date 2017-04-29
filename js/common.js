@@ -20,5 +20,5 @@ function disconnect() {
 }
 
 function renderNews(responseMessage) {
-    $("footer p:eq(0)").text(responseMessage);
+    $("footer p:eq(0)").text(responseMessage.message);
 }
