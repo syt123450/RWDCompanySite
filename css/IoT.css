@@ -64,7 +64,7 @@ div.allprice{
   display:inline-block;
 }
 
-div.price1,div.price2{
+.price{
    margin-top:5%;
    display:inline-block;
    width:200px;
@@ -112,7 +112,7 @@ div.inputcontainer{
   display: block;
 }
 
-#price p {
+.price p {
   color:#008CBA;
   font-size:1em;
   text-align: center;
