@@ -1,0 +1,29 @@
+
+h3{
+    text-align: center;
+}
+div.contactInfo{
+    height:30%;
+}
+h2{
+    color:#DC9042;
+    text-align: center;
+}
+#contactinfo p{
+  text-align: center;
+}
+
+#engineer p{
+  text-align: center;
+}
+
+div.sjsu{
+  text-align: center;
+  margin: 20px 0 12px 0;
+  padding-bottom:5%;
+}
+
+#picture1 {
+    height:50%;
+    width:50%;
+}
