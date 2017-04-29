@@ -40,7 +40,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a>Mobile</a></li>
-                                    <li><a href="mobile.html">Big Data</a></li>
+                                    <li><a href="bigData.html">Big Data</a></li>
                                     <li><a href="IoT.html">IoE/IoT</a></li>
                                 </ul>
                             </li>
@@ -65,8 +65,77 @@
     </header>
 
     <main>
+      <!-- left column button -->
+      <div class="col-sx-1 col-sm-1 col-md-1 col-lg-1" id="col1">
+        <button class="button BrochureButton" id="BrochureButton">Brochure</button>
+        <button class="button WhitePaperButton" id="WhitePaperButton">White Paper</button>
+      </div>
+
+      <!-- main content -->
+      <div class="col-sx-10 col-sm-10 col-md-10 col-lg-10">
+         <div class = "mobile">
+            <h3>Mobile</h3>
+            <p>OurCo has always been keen on customer service and innovation. Our products have always added value to our customer’s everyday life.
+            We always strive to give our customers the best products with highest quality. We are grateful to our loyal customers who have always motivated us to do better each day.
+            We are really excited to announce yet another new product in our series. We hope you will appreciate and accept this product as enthusiastically as you always supported for rest of our products.</p>
+         </div>
+
+         <h2>Product Display</h2>
+         <div class = "product1">
+            <img class="inner"  src="../img/mobile_thumbail.png" alt="product1" class="avatar" id="picture1"></img>
+        </div>
+
+      </div>
+
+      <!-- right column button -->
+      <div class="col-sx-1 col-sm-1 col-md-1 col-lg-1" id="col3">
+        <img class="inner" src="../img/top1.jpg" alt="top1" class="avatar" id="icon1"></img>
+          <p><i>"This is my fourth buy from this store. Excellent service, excellent products."</i></p>
+          <p><i><b> -- Chris, IL</b></i></p>
+      </div>
 
     </main>
+
+    <!-- downloadBrochure button -->
+    <div id="downloadBrochure">
+      <div align="right" style="background-color:#CDCDCD;"><span id="span01" style="cursor:pointer">close</span>
+      </div>
+
+      <form >
+       <div class="title">
+         <p>Download Brochure Page</p></p>
+       </div>
+
+        <div class="inputcontainer">
+          First Name: <input type="text" name="firstName"><br>
+          Last Name: <input type="text" name="lastName"><br>
+          Email Addr: <input type="text" name="email"><br>
+          <input type="submit" value="Download" id="submit">
+          <input type="reset" value="Cancel" id="cancel1">
+        </div>
+      </form>
+    </div>
+    <!-- download WhitePaper button -->
+    <div id="downloadWhitePaper">
+      <div align="right" style="background-color:#CDCDCD;"><span id="span02" style="cursor:pointer">close</span>
+      </div>
+
+      <form >
+       <div class="title">
+         <p>Download White Paper Page</p></p>
+       </div>
+
+        <div class="inputcontainer">
+          First Name: <input type="text" name="firstName"><br>
+          Last Name: <input type="text" name="lastName"><br>
+          Email Addr: <input type="text" name="email"><br>
+          <input type="submit" value="Download" id="submit">
+          <input type="reset" value="Cancel" id="cancel2">
+        </div>
+      </form>
+    </div>
+
+
 
     <footer>
         <p>twitter 新闻在这里</p>

@@ -1,0 +1,121 @@
+h3{
+    text-align: center;
+}
+
+h2{
+    color:#43bad5;
+    text-align: center;
+}
+
+#col1{
+  margin-top:20%;
+}
+
+#col3{
+  margin-top:18%;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.BrochureButton {
+    background-color: white;
+    color: #43bad5;
+    border: 2px solid #43bad5;
+}
+
+.BrochureButton:hover {
+    background-color: #43bad5;
+    color: white;
+}
+
+.WhitePaperButton {
+    width: 90px;
+    background-color: white;
+    color: #008CBA;
+    border: 2px solid #008CBA;
+}
+
+.WhitePaperButton:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+div.bigData{
+    height:30%;
+}
+
+div.data1{
+   margin-left: 10%;
+   margin-right:10%;
+   display:inline-block;
+}
+
+#downloadBrochure, #downloadWhitePaper{
+  position:absolute;
+  left:360px;
+  top:110px;
+  width:450px;
+  height:auto;
+  border:solid #7A7A7A 4px;
+  background-color: white;
+}
+
+div.title{
+   background-color: #43bad5;
+   height:25px;
+   width:80%;
+   margin-top:3%;
+   margin-left:10%;
+   text-align: center;
+   vertical-align: middle;
+   color:white;
+   border: 2px solid #008CBA;
+   display: inline-block;
+   margin-bottom:3%;
+}
+
+div.inputcontainer{
+  text-align: center;
+  vertical-align: middle;
+  margin-top:2%;
+}
+
+#submit{
+  background-color: #43bad5;
+  color:white;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+
+#cancel{
+  background-color: white;
+  color:#43bad5;
+  margin-top:5%;
+  margin-bottom:5%;
+  margin-left:5%;
+}
+
+#data1{
+  height: 100%;
+  width: 100%;
+}
+
+#icon1{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20%;
+  display: block;
+}
