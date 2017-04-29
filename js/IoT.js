@@ -29,57 +29,42 @@ $(function () {
 		$("#downloadWhitePaper").hide();
 	});
 	
-	$("#downloadBrochure").find("[type=submit]").click(function (e) {
-		e.preventDefault();
-		console.log("lalal")
+	$("#downloadBrochure").find("a").click(function (e) {
 		var first = $("#downloadBrochure").find("[name=firstName]").val();
 		var last = $("#downloadBrochure").find("[name=lastName]").val();
 		var email = $("#downloadBrochure").find("[name=emmail]").val();
 
 		var data = JSON.stringify({
-			firstname: first,
-			lastname: last,
+			firstName: first,
+			lastName: last,
 			email: email
 		});
 
-		$.post("", data, function (data, status) {
-			if (status == "OK" || status == 200) {
-				var url = URL.createObjectURL(data);
-				var $a = $('<a />', {
-					'href': url,
-					'download': 'brochure.pdf',
-					'text': "click"
-				}).hide().appendTo("body")[0].click();
+		$.post("/API/create", data, function (data) {
+			if (data.message == "success" || data.message == "Success") {
 
-				$("#downloadBrochure").find("form").html("<h3>Start to download the file</h3>");
+				$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
 			}
-		})
+		});
 
 	});
 
-	$("#downloadWhitePaper").find("[type=submit]").click(function (e) {
-		e.preventDefault();
-		console.log("lalal")
-		var first = $("#downloadBrochure").find("[name=firstName]").val();
-		var last = $("#downloadBrochure").find("[name=lastName]").val();
-		var email = $("#downloadBrochure").find("[name=emmail]").val();
+	$("#downloadWhitePaper").find("a").click(function (e) {
+	
+		var first = $("#downloadWhitePaper").find("[name=firstName]").val();
+		var last = $("#downloadWhitePaper").find("[name=lastName]").val();
+		var email = $("#downloadWhitePaper").find("[name=emmail]").val();
 
 		var data = JSON.stringify({
-			firstname: first,
-			lastname: last,
+			firstName: first,
+			lastName: last,
 			email: email
 		});
 
-		$.post("", data, function (data, status) {
-			if (status == "OK" || status == 200) {
-				var url = URL.createObjectURL(data);
-				var $a = $('<a />', {
-					'href': url,
-					'download': 'brochure.pdf',
-					'text': "click"
-				}).hide().appendTo("body")[0].click();
+		$.post("/API/create", data, function (data) {
+			if (data.message == "success" || data.message == "Success") {
 
-				$("#downloadBrochure").find("form").html("<h3>Start to download the file</h3>");
+				$("#downloadWhitePaper").find("form").html("<h3>Thank you for providing contacts.</h3>");
 			}
 		});
 
