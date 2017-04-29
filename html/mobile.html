@@ -1,146 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Mobile</title>
-    <script src="https://cdn.bootcss.com/sockjs-client/1.1.2/sockjs.js"></script>
-    <script src="../js/stomp.min.js"></script>
-    <script src="../js/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/mobile.css">
-    <script src="../js/common.js"></script>
-    <script src="../js/mobile.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<title>Mobile</title>
+	<script src="https://cdn.bootcss.com/sockjs-client/1.1.2/sockjs.js"></script>
+	<script src="../js/stomp.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+	<script src="../js/common.js"></script>
+	<script src="../js/mobile.js"></script>
 </head>
+
 <body>
 
-<div class="container">
-    <header class="page-header">
-        <img src="../img/demo.png">
-        <div class="col-xs-8 col-sm-8 col-xs-offset-2 col-sm-offset-2">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#example-navbar-collapse">
+	<div class="container">
+		<header class="page-header">
+			<img src="../img/demo.png">
+			<div class="col-xs-8 col-sm-8 col-xs-offset-2 col-sm-offset-2">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
                             <span class="sr-only">Switcher</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="../index.html">Home</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<a class="navbar-brand" href="../index.html">Home</a>
+						</div>
+						<div class="collapse navbar-collapse" id="example-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="dropdown active">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     Product <b class="caret"></b>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a>Mobile</a></li>
-                                    <li><a href="bigData.html">Big Data</a></li>
-                                    <li><a href="IoT.html">IoE/IoT</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<ul class="dropdown-menu">
+										<li><a>Mobile</a></li>
+										<li><a href="bigData.html">Big Data</a></li>
+										<li><a href="IoT.html">IoE/IoT</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     About Us <b class="caret"></b>
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="management.html">Management</a></li>
-                                    <li><a href="conduct.html">Code of Conduct</a></li>
-                                    <li><a href="download.html">Business Process</a></li>
-                                    <li><a href="location.html">Locations</a></li>
-                                    <li><a href="contact.html">Contacts</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="blog.html">BLOG</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+									<ul class="dropdown-menu">
+										<li><a href="management.html">Management</a></li>
+										<li><a href="conduct.html">Code of Conduct</a></li>
+										<li><a href="download.html">Business Process</a></li>
+										<li><a href="location.html">Locations</a></li>
+										<li><a href="contact.html">Contacts</a></li>
+									</ul>
+								</li>
+								<li><a href="blog.html">BLOG</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-    <main>
-      <!-- left column button -->
-      <div class="col-sx-1 col-sm-1 col-md-1 col-lg-1" id="col1">
-        <button class="button BrochureButton" id="BrochureButton">Brochure</button>
-        <button class="button WhitePaperButton" id="WhitePaperButton">White Paper</button>
-      </div>
+		<main>
+			<!-- left column button -->
+			<div class="col-sx-1 col-sm-1 col-md-1 col-lg-1" id="col1">
+				<button class="button BrochureButton" id="BrochureButton">Brochure</button>
+				<button class="button WhitePaperButton" id="WhitePaperButton">White Paper</button>
+			</div>
 
-      <!-- main content -->
-      <div class="col-sx-10 col-sm-10 col-md-10 col-lg-10">
-         <div class = "mobile">
-            <h3>Mobile</h3>
-            <p>OurCo has always been keen on customer service and innovation. Our products have always added value to our customer’s everyday life.
-            We always strive to give our customers the best products with highest quality. We are grateful to our loyal customers who have always motivated us to do better each day.
-            We are really excited to announce yet another new product in our series. We hope you will appreciate and accept this product as enthusiastically as you always supported for rest of our products.</p>
-         </div>
+			<!-- main content -->
+			<div class="col-sx-10 col-sm-10 col-md-10 col-lg-10">
+				<div class="mobile">
+					<h3>Mobile</h3>
+					<p>OurCo has always been keen on customer service and innovation. Our products have always added value to our customer’s everyday life. We always strive to give our customers the best products with highest quality. We are grateful to our loyal customers who have always motivated us to do better each day. We are really excited to announce yet another new product in our series. We hope you will appreciate and accept this product as enthusiastically as you always supported for rest of our products.</p>
+				</div>
 
-         <h2>Product Display</h2>
-         <div class = "product1">
-            <img class="inner"  src="../img/mobile_thumbail.png" alt="product1" class="avatar" id="picture1"></img>
-        </div>
+				<h2>Product Display</h2>
+				<div class="product1">
+					<img class="inner" src="../img/mobile_thumbail.png" alt="product1" class="avatar" id="picture1">
+				</div>
 
-      </div>
+			</div>
 
-      <!-- right column button -->
-      <div class="col-sx-1 col-sm-1 col-md-1 col-lg-1" id="col3">
-        <img class="inner" src="../img/top1.jpg" alt="top1" class="avatar" id="icon1"></img>
-          <p><i>"This is my fourth buy from this store. Excellent service, excellent products."</i></p>
-          <p><i><b> -- Chris, IL</b></i></p>
-      </div>
+			<!-- right column button -->
+			<div class="col-sx-1 col-sm-1 col-md-1 col-lg-1" id="col3">
+				<img class="inner" src="../img/top1.jpg" alt="top1" class="avatar" id="icon1">
+				<p><i>"This is my fourth buy from this store. Excellent service, excellent products."</i></p>
+				<p><i><b> -- Chris, IL</b></i></p>
+			</div>
 
-    </main>
+		</main>
 
-    <!-- downloadBrochure button -->
-    <div id="downloadBrochure">
-      <div align="right" style="background-color:#CDCDCD;"><span id="span01" style="cursor:pointer">close</span>
-      </div>
+		<!-- downloadBrochure button -->
+		<div id="downloadBrochure">
+			<div align="right" style="background-color:#CDCDCD;"><span id="span01" style="cursor:pointer">close</span>
+			</div>
 
-      <form >
-       <div class="title">
-         <p>Download Brochure Page</p></p>
-       </div>
+			<form>
+				<div class="title">
+					<p>Download Brochure Page</p>
+				</div>
 
-        <div class="inputcontainer">
-          First Name: <input type="text" name="firstName"><br>
-          Last Name: <input type="text" name="lastName"><br>
-          Email Addr: <input type="text" name="email"><br>
-          <input type="submit" value="Download" id="submit">
-          <input type="reset" value="Cancel" id="cancel1">
-        </div>
-      </form>
-    </div>
-    <!-- download WhitePaper button -->
-    <div id="downloadWhitePaper">
-      <div align="right" style="background-color:#CDCDCD;"><span id="span02" style="cursor:pointer">close</span>
-      </div>
+				<div class="inputcontainer">
+					First Name: <input type="text" name="firstName"><br> Last Name: <input type="text" name="lastName"><br> Email Addr: <input type="text" name="email"><br>
+					<input type="submit" value="Download" id="submit">
+					<input type="reset" value="Cancel" id="cancel1">
+				</div>
+			</form>
+		</div>
+		<!-- download WhitePaper button -->
+		<div id="downloadWhitePaper">
+			<div align="right" style="background-color:#CDCDCD;"><span id="span02" style="cursor:pointer">close</span>
+			</div>
 
-      <form >
-       <div class="title">
-         <p>Download White Paper Page</p></p>
-       </div>
+			<form>
+				<div class="title">
+					<p>Download White Paper Page</p>
+				</div>
 
-        <div class="inputcontainer">
-          First Name: <input type="text" name="firstName"><br>
-          Last Name: <input type="text" name="lastName"><br>
-          Email Addr: <input type="text" name="email"><br>
-          <input type="submit" value="Download" id="submit">
-          <input type="reset" value="Cancel" id="cancel2">
-        </div>
-      </form>
-    </div>
+				<div class="inputcontainer">
+					First Name: <input type="text" name="firstName"><br> Last Name: <input type="text" name="lastName"><br> Email Addr: <input type="text" name="email"><br>
+					<input type="submit" value="Download" id="submit">
+					<input type="reset" value="Cancel" id="cancel2">
+				</div>
+			</form>
+		</div>
 
 
 
-    <footer>
-        <p>twitter 新闻在这里</p>
-        <p>copyright © 2017 CMPE280 shock wave All rights reserved</p>
-    </footer>
-</div>
+		<footer>
+			<p>twitter 新闻在这里</p>
+			<p>copyright © 2017 CMPE280 shock wave All rights reserved</p>
+		</footer>
+	</div>
 </body>
+
 </html>
