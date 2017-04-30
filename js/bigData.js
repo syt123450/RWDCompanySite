@@ -40,10 +40,18 @@ $(function () {
 			email: email
 		});
 
-		$.post("/API/create", data, function (data) {
-			if (data.message == "success" || data.message == "Success") {
+		$.ajax({
+			url: "/API/create",
+			method: "post",
+			contentType: "application/json; charset=utf-8",
+			async: true,
+			data: data,
+			dataType: 'json',
+			success: function (data) {
+				if (data.message == "success" || data.message == "Success") {
 
-				$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
+					$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
+				}
 			}
 		});
 
@@ -61,10 +69,18 @@ $(function () {
 			email: email
 		});
 
-		$.post("/API/create", data, function (data) {
-			if (data.message == "success" || data.message == "Success") {
+		$.ajax({
+			url: "/API/create",
+			method: "post",
+			contentType: "application/json; charset=utf-8",
+			async: true,
+			data: data,
+			dataType: 'json',
+			success: function (data) {
+				if (data.message == "success" || data.message == "Success") {
 
-				$("#downloadWhitePaper").find("form").html("<h3>Thank you for providing contacts.</h3>");
+					$("#downloadWhitePaper").find("form").html("<h3>Thank you for providing contacts.</h3>");
+				}
 			}
 		});
 

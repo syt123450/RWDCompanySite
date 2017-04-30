@@ -28,7 +28,7 @@ $(function () {
 	$("#cancel2").click(function () {
 		$("#downloadWhitePaper").hide();
 	});
-	
+
 	$("#downloadBrochure").find("a").click(function (e) {
 		var first = $("#downloadBrochure").find("[name=firstName]").val();
 		var last = $("#downloadBrochure").find("[name=lastName]").val();
@@ -39,18 +39,27 @@ $(function () {
 			lastName: last,
 			email: email
 		});
+		$.ajax({
+			url: "/API/create",
+			method: "post",
+			contentType: "application/json; charset=utf-8",
+			async: true,
+			data: data,
+			dataType: 'json',
+			success: function (data) {
+				if (data.message == "success" || data.message == "Success") {
 
-		$.post("/API/create", data, function (data) {
-			if (data.message == "success" || data.message == "Success") {
-
-				$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
+					$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
+				}
 			}
 		});
+
+
 
 	});
 
 	$("#downloadWhitePaper").find("a").click(function (e) {
-	
+
 		var first = $("#downloadWhitePaper").find("[name=firstName]").val();
 		var last = $("#downloadWhitePaper").find("[name=lastName]").val();
 		var email = $("#downloadWhitePaper").find("[name=emmail]").val();
@@ -61,20 +70,28 @@ $(function () {
 			email: email
 		});
 
-		$.post("/API/create", data, function (data) {
-			if (data.message == "success" || data.message == "Success") {
+		$.ajax({
+			url: "/API/create",
+			method: "post",
+			contentType: "application/json; charset=utf-8",
+			async: true,
+			data: data,
+			dataType: 'json',
+			success: function (data) {
+				if (data.message == "success" || data.message == "Success") {
 
-				$("#downloadWhitePaper").find("form").html("<h3>Thank you for providing contacts.</h3>");
+					$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
+				}
 			}
 		});
 
 	});
 
 
-    connect();
+	connect();
 
-    $(window).unload(function(){
-        disconnect();
-    });
+	$(window).unload(function () {
+		disconnect();
+	});
 
 });
