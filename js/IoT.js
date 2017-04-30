@@ -69,4 +69,5 @@ $(function () {
 		});
 
 	});
+	//$("form").find("input").on("change")
 });
