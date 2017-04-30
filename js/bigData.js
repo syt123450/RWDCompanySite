@@ -32,7 +32,7 @@ $(function () {
 	$("#downloadBrochure").find("a").click(function (e) {
 		var first = $("#downloadBrochure").find("[name=firstName]").val();
 		var last = $("#downloadBrochure").find("[name=lastName]").val();
-		var email = $("#downloadBrochure").find("[name=emmail]").val();
+		var email = $("#downloadBrochure").find("[name=email]").val();
 
 		var data = JSON.stringify({
 			firstName: first,
@@ -61,7 +61,7 @@ $(function () {
 
 		var first = $("#downloadWhitePaper").find("[name=firstName]").val();
 		var last = $("#downloadWhitePaper").find("[name=lastName]").val();
-		var email = $("#downloadWhitePaper").find("[name=emmail]").val();
+		var email = $("#downloadWhitePaper").find("[name=email]").val();
 
 		var data = JSON.stringify({
 			firstName: first,
