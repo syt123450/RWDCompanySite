@@ -65,8 +65,8 @@ div.product1{
 
 #downloadBrochure, #downloadWhitePaper{
   position:absolute;
-  left:360px;
-  top:110px;
+  left:30%;
+  top:30%;
   width:450px;
   height:auto;
   border:solid #7A7A7A 4px;

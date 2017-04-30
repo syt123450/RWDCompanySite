@@ -17,22 +17,22 @@ $(function () {
 		$("#downloadBrochure").hide();
 	});
 
-	$("#cancel1").click(function () {
+	$("[type=reset]").click(function () {
 		$("#downloadBrochure").hide();
+		$("#downloadWhitePaper").hide();
 	});
+
 
 	$("#span02").click(function () {
 		$("#downloadWhitePaper").hide();
 	});
 
-	$("#cancel2").click(function () {
-		$("#downloadWhitePaper").hide();
-	});
 
 	$("#downloadBrochure").find("a").click(function (e) {
+		$("#downloadBrochure").hide();
 		var first = $("#downloadBrochure").find("[name=firstName]").val();
 		var last = $("#downloadBrochure").find("[name=lastName]").val();
-		var email = $("#downloadBrochure").find("[name=emmail]").val();
+		var email = $("#downloadBrochure").find("[name=email]").val();
 
 		var data = JSON.stringify({
 			firstName: first,
@@ -47,10 +47,9 @@ $(function () {
 			data: data,
 			dataType: 'json',
 			success: function (data) {
-				if (data.message == "success" || data.message == "Success") {
-
-					$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
-				}
+					$("#downloadBrochure").find("form").remove();
+					$("#downloadBrochure").append("<div class='title'>"+data.message+"</div>");
+					$("#downloadBrochure").show();
 			}
 		});
 
@@ -59,10 +58,10 @@ $(function () {
 	});
 
 	$("#downloadWhitePaper").find("a").click(function (e) {
-
+		$("#downloadWhitePaper").hide();
 		var first = $("#downloadWhitePaper").find("[name=firstName]").val();
 		var last = $("#downloadWhitePaper").find("[name=lastName]").val();
-		var email = $("#downloadWhitePaper").find("[name=emmail]").val();
+		var email = $("#downloadWhitePaper").find("[name=email]").val();
 
 		var data = JSON.stringify({
 			firstName: first,
@@ -78,15 +77,22 @@ $(function () {
 			data: data,
 			dataType: 'json',
 			success: function (data) {
-				if (data.message == "success" || data.message == "Success") {
-
-					$("#downloadBrochure").find("form").html("<h3>Thank you for providing contacts.</h3>");
-				}
+					$("#downloadWhitePaper").find("form").remove();
+					$("#downloadWhitePaper").append("<div class='title'>"+data.message+"</div>");
+					$("#downloadWhitePaper").show();
 			}
 		});
 
 	});
+	
+	$("form").find('input').change(function(){
 
+		if($(this).parent().find("[name=firstName]").val()!=""&&$(this).parent().find("[name=lastName]").val()!=""&&$(this).parent().find("[name=email]").val()!=""){
+			$(this).parent().find(".btn-info").removeClass("disabled");
+		}else{
+			$(this).parent().find(".btn-info").addClass("disabled");
+		}
+	});
 
 	connect();
 
