@@ -68,4 +68,10 @@ $(function () {
 		});
 
 	});
+
+    connect();
+
+    $(window).unload(function(){
+        disconnect();
+    });
 });

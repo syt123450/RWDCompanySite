@@ -69,5 +69,12 @@ $(function () {
 		});
 
 	});
-	//$("form").find("input").on("change")
+
+
+    connect();
+
+    $(window).unload(function(){
+        disconnect();
+    });
+
 });

@@ -73,10 +73,10 @@ $(function () {
 
     });
 
-    // connect();
-    //
-    // $(window).unload(function () {
-    //     disconnect();
-    // });
+    connect();
+
+    $(window).unload(function () {
+        disconnect();
+    });
 
 });

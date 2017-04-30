@@ -27,9 +27,9 @@ $(document).ready(function($){
 	  $('[id=carousel-selector-'+id+']').removeClass('unselected');
 	});
 
-    // connect();
-    //
-    // $(window).unload(function(){
-    //     disconnect();
-    // });
+    connect();
+
+    $(window).unload(function(){
+        disconnect();
+    });
 });
